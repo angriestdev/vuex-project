@@ -1,5 +1,5 @@
 <template>
   <div class="quiz">
-    <h1>This is a quiz page</h1>
+    <v-toolbar class="elevation-1" height="50px"></v-toolbar>
   </div>
 </template>
