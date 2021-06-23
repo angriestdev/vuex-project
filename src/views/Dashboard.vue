@@ -1,6 +1,8 @@
 <template>
   <div class="dashboard">
-    <v-page> </v-page>
+    <v-page>
+      <h1>This is a Dashboard</h1>
+    </v-page>
   </div>
 </template>
 
