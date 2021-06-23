@@ -1,8 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <v-navigation-drawer app nav left class="elevation-2" width="55px">
+        <v-list class="mt-12">
+          <v-list-item to="/" class="dashboard">
+            <v-icon> mdi-view-dashboard-outline </v-icon>
+          </v-list-item>
+
+          <v-list-item to="/Quiz">
+            <v-icon> mdi-file </v-icon>
+          </v-list-item>
+
+          <v-list-item link>
+            <v-icon> mdi-google </v-icon>
+          </v-list-item>
+
+          <v-list-item link>
+            <v-icon> mdi-tools </v-icon>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
     </div>
     <router-view />
   </div>
@@ -19,14 +36,5 @@
 
 #nav {
   padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
