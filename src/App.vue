@@ -1,9 +1,12 @@
 <template>
-  <div id="app">
+  <v-app id="app">
+    <div id="toolbar">
+      <v-toolbar class="elevation-1" height="50px"></v-toolbar>
+    </div>
     <div id="nav">
       <v-navigation-drawer app nav left class="elevation-2" width="55px">
         <v-list class="mt-12">
-          <v-list-item to="/" class="dashboard">
+          <v-list-item to="/">
             <v-icon> mdi-view-dashboard-outline </v-icon>
           </v-list-item>
 
@@ -21,16 +24,15 @@
         </v-list>
       </v-navigation-drawer>
     </div>
-    <router-view />
-  </div>
+    <v-main class="grey lighten-5">
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 </style>
