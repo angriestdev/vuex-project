@@ -24,7 +24,7 @@
         </v-list>
       </v-navigation-drawer>
     </div>
-    <v-main class="grey lighten-5">
+    <v-main class="grey lighten-4">
       <router-view></router-view>
     </v-main>
   </v-app>
